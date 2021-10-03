@@ -1,0 +1,30 @@
+[
+	{
+		"id": 1,
+		"name": "Development",
+		"description": "Learn how to develop your software and websites. We provide you with a wide range of different development courses that will help you to learn more",
+		"icon": "fas fa-laptop-code",
+		"varient": "purple"
+	},
+	{
+		"id": 2,
+		"name": "Design",
+		"description": "Learn how to design your website. We have a wide range of designing courses from which you can select the best that suits you.",
+		"icon": "fas fa-palette",
+		"varient": "pink"
+	},
+	{
+		"id": 3,
+		"name": "Marketing",
+		"description": "In this world, marketing is essential to learn how to do excellent marketing with our courses and get your business on top.",
+		"icon": "fas fa-poll",
+		"varient": "blue"
+	},
+	{
+		"id": 4,
+		"name": "Photography",
+		"description": "The most successful business today is photography, but you should know how to get it on top. Our courses will help you to pull yourself up. ",
+		"icon": "fas fa-camera",
+		"varient": "green"
+	}
+]

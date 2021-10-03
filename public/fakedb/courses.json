@@ -1,0 +1,74 @@
+[
+	{
+		"id": 1,
+		"title": "Learn Python Programming",
+		"image": "",
+		"rating": 4.5,
+		"views": 4900,
+		"price": 150,
+		"author": "john doe"
+	},
+	{
+		"id": 2,
+		"title": "Learn Javascript Programming",
+		"image": "",
+		"rating": 4.6,
+		"views": 6000,
+		"price": 120,
+		"author": "Mike tyson"
+	},
+	{
+		"id": 3,
+		"title": "Learn Photoshop",
+		"image": "",
+		"rating": 4.0,
+		"views": 3700,
+		"price": 100,
+		"author": "Nicole Brown"
+	},
+	{
+		"id": 4,
+		"title": "Learn Digital Marketing",
+		"image": "",
+		"rating": 4.2,
+		"views": 4000,
+		"price": 130,
+		"author": "Nicole Brown"
+	},
+	{
+		"id": 5,
+		"title": "Photography Mastery",
+		"image": "",
+		"rating": 3.8,
+		"views": 2200,
+		"price": 100,
+		"author": "M. Parker"
+	},
+	{
+		"id": 6,
+		"title": "Learn Professional UI/UX",
+		"image": "",
+		"rating": 4.6,
+		"views": 4000,
+		"price": 100,
+		"author": "William Tylor"
+	},
+	{
+		"id": 7,
+		"title": "Django Web Development",
+		"image": "",
+		"rating": 4.7,
+		"views": 4000,
+		"price": 100,
+		"author": "Olivier smith"
+	},
+	{
+		"id": 8,
+		"title": "MERN Web Development",
+		"image": "",
+		"rating": 4.8,
+		"views": 4000,
+		"price": 100,
+		"author": "Jenie johnson"
+	}
+]
