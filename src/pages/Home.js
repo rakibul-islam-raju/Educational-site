@@ -52,7 +52,7 @@ const Home = () => {
 			<section className="py-12 mt-16">
 				<div className="wrapper">
 					<h2 className="text-center text-gray-600 font-semibold">
-						Get choice of your course
+						Get our top rated courses
 					</h2>
 					<div className="grid grid-cols-1 md:grid-cols-3 md:grid-cols-4 gap-4 mt-16">
 						{courses.map((course) => (
