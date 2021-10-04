@@ -4,9 +4,9 @@ import Header from "./components/Header";
 import Footer from "./components/Footer";
 import Home from "./pages/Home";
 import About from "./pages/About";
-import Service from "./pages/Service";
+import Courses from "./pages/Courses";
 import PageNotFound from "./pages/PageNotFound";
-import Blog from "./pages/Blog";
+import Blogs from "./pages/Blogs";
 
 function App() {
 	return (
@@ -16,8 +16,8 @@ function App() {
 				<Switch>
 					<Route exact path="/" component={Home} />
 					<Route exact path="/about" component={About} />
-					<Route exact path="/service" component={Service} />
-					<Route exact path="/blog" component={Blog} />
+					<Route exact path="/courses" component={Courses} />
+					<Route exact path="/blogs" component={Blogs} />
 					<Route path="*" component={PageNotFound} />
 				</Switch>
 				<Footer />

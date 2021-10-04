@@ -2,9 +2,11 @@ import { useState, useEffect } from "react";
 import CoverImage from "../assets/images/cover-image.jpg";
 import Categories from "../components/Categories";
 import CourseCard from "../components/CourseCard";
+import { useHistory } from "react-router-dom";
 
 const Home = () => {
 	const [courses, setCourses] = useState([]);
+	const history = useHistory();
 
 	// useEffect
 	useEffect(() => {
@@ -15,6 +17,10 @@ const Home = () => {
 				setCourses([...topCourses]);
 			});
 	}, []);
+
+	const viewCourses = () => {
+		history.push("/courses");
+	};
 
 	return (
 		<div className="mt-24 py-16">
@@ -45,8 +51,8 @@ const Home = () => {
 			{/* Courses */}
 			<section className="py-12 mt-16">
 				<div className="wrapper">
-					<h2 className="text-center text-gray-600 font-semibold capitalize">
-						Choice favourite course from top category
+					<h2 className="text-center text-gray-600 font-semibold">
+						Get choice of your course
 					</h2>
 					<div className="grid grid-cols-1 md:grid-cols-3 md:grid-cols-4 gap-4 mt-16">
 						{courses.map((course) => (
@@ -54,7 +60,12 @@ const Home = () => {
 						))}
 					</div>
 					<div className="flex justify-center mt-8">
-						<button className="primary-btn mt-8">View All</button>
+						<button
+							onClick={viewCourses}
+							className="primary-btn mt-8"
+						>
+							View All
+						</button>
 					</div>
 				</div>
 			</section>

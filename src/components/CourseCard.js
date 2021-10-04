@@ -2,9 +2,9 @@ const CourseCard = ({ course }) => {
 	const { title, image, rating, views, price, author } = course;
 	return (
 		<>
-			<div className="round p-4 rounded shadow transform translate-y-0 hover:shadow-lg hover:-translate-y-6 transition duration-300 cursor-pointer">
+			<div className="round p-4 rounded shadow border transform translate-y-0 hover:shadow-lg hover:-translate-y-6 transition duration-300 cursor-pointer">
 				<img
-					className="h-48 bg-gray-200 rounded"
+					className="h-48 bg-gray-200 rounded mx-auto"
 					src={image}
 					alt={title}
 				/>
@@ -17,7 +17,7 @@ const CourseCard = ({ course }) => {
 					</div>
 				</div>
 				<h4 className="my-2 text-gray-900">{title}</h4>
-				<div className="border-t-2 flex flex-wrap items-center justify-between pt-1">
+				<div className="border-t flex flex-wrap items-center justify-between pt-1">
 					<span className="text-blue-600">{author}</span>
 					<span className="text-xl font-semibold text-red-500">
 						$ {price}
