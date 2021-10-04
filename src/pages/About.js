@@ -3,9 +3,9 @@ import AboutImage from "../assets/images/about-us.jpg";
 const About = () => {
 	return (
 		<div className="mt-24 py-16">
-			<section className="wrapper flex items-center justify-between">
-				<div className="hero-text w-full md:w-6/12">
-					<h2 className="text-red-400 font-semibold tracking-wider leading-tight">
+			<section className="wrapper flex flex-col md:flex-row items-center md:justify-between">
+				<div className="hero-text w-full md:w-6/12 order-last md:order-first">
+					<h2 className="text-red-400 font-semibold tracking-wider leading-tight text-center md:text-left md:text-start">
 						Who we are ? <br /> and what do we do ?
 					</h2>
 					<p className="text-gray-600 text-lg mt-4">
@@ -40,7 +40,7 @@ const About = () => {
 						<i class="fas fa-paper-plane ml-2"></i>
 					</button>
 				</div>
-				<div className="hero-image w-full md:w-6/12">
+				<div className="hero-image w-full md:w-6/12 order-first md:order-last">
 					<img
 						className="bg-center bg-cover"
 						src={AboutImage}

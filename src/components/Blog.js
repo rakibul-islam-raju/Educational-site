@@ -2,9 +2,9 @@ const Blog = ({ blog }) => {
 	const { title, image, category, author, content } = blog;
 	return (
 		<>
-			<div className="flex rounded p-2 shadow space-x-4 cursor-pointer hover:shadow-lg">
+			<div className="flex flex-col md:flex-row rounded p-2 shadow space-x-4 cursor-pointer hover:shadow-lg">
 				<img className="w-32" src={image} alt={title} />
-				<div className="">
+				<div className="mt-4 md:mt-2">
 					<span className="bg-red-100 text-red-500 rounded p-1 text-sm font-semibold">
 						{category}
 					</span>

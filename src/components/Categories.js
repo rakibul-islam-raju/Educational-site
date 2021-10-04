@@ -17,7 +17,7 @@ const Categories = () => {
 				<h2 className="text-center text-gray-600 font-semibold">
 					Choice favourite course from top category
 				</h2>
-				<div className="grid grid-cols-1 md:grid-cols-3 md:grid-cols-4 gap-4 mt-16">
+				<div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 mt-16">
 					{categories.map((category) => (
 						<CategoryCard key={category.id} category={category} />
 					))}

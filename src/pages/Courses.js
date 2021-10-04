@@ -35,7 +35,7 @@ const Courses = () => {
 					<h2 className="text-center text-gray-600 font-semibold">
 						Our courses
 					</h2>
-					<div className="flex justify-center mt-12 space-x-4">
+					<div className="flex flex-wrap justify-center mt-12 space-x-1 md:space-x-4">
 						<FilterBtn text="All" handleFilter={handleFilter} />
 						<FilterBtn
 							text="Development"
@@ -51,7 +51,7 @@ const Courses = () => {
 							handleFilter={handleFilter}
 						/>
 					</div>
-					<div className="grid grid-cols-1 md:grid-cols-3 md:grid-cols-4 gap-4 mt-16">
+					<div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 mt-16">
 						{displayCourse.map((course) => (
 							<CourseCard key={course.id} course={course} />
 						))}

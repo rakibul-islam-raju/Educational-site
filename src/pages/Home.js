@@ -25,18 +25,20 @@ const Home = () => {
 	return (
 		<div className="mt-24 py-16">
 			{/* hero area */}
-			<section className="wrapper flex items-center justify-between">
-				<div className="hero-text w-full md:w-6/12">
-					<h2 className="text-red-400 font-semibold tracking-wider leading-tight">
+			<section className="wrapper flex flex-col md:flex-row items-center md:justify-between ">
+				<div className="hero-text w-full md:w-6/12 order-last md:order-first">
+					<h2 className="text-red-400 font-semibold tracking-wider leading-tight text-xl md:text-4xl text-center md:text-left">
 						Learn more and make success the result of perfection.
 					</h2>
-					<p className="text-gray-600 text-lg mt-4">
+					<p className="text-gray-600 text-lg mt-4 text-center md:text-left">
 						Pick from over 100,000 online video courses with new
 						additions published every month.
 					</p>
-					<button className="primary-btn mt-8">Explore</button>
+					<div className="flex justify-center md:justify-start">
+						<button className="primary-btn mt-8">Explore</button>
+					</div>
 				</div>
-				<div className="hero-image w-full md:w-6/12">
+				<div className="hero-image w-full mb-6 md:mb-0 md:w-6/12 order-first md:order-last">
 					<img
 						className="bg-center bg-cover"
 						src={CoverImage}
@@ -54,7 +56,7 @@ const Home = () => {
 					<h2 className="text-center text-gray-600 font-semibold">
 						Get our top rated courses
 					</h2>
-					<div className="grid grid-cols-1 md:grid-cols-3 md:grid-cols-4 gap-4 mt-16">
+					<div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 mt-16">
 						{courses.map((course) => (
 							<CourseCard key={course.id} course={course} />
 						))}
