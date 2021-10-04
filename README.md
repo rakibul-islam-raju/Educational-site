@@ -2,7 +2,9 @@
 
 # An online learning platform
 
--   Categorised courses
--   Blog courses
+-   Categories
+-   Category based courses
+-   Category based blog
+-   Course rating
 
-# Live site link [Skillit](addressyarn)
+# Live site link [Skillit](https://skillit.netlify.app/)
