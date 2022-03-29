@@ -1,6 +1,9 @@
 import { Link } from "react-router-dom";
+import { useAuth } from "../contexts/AuthProvider";
 
 const Header = () => {
+	const { currentUser, logout } = useAuth();
+
 	return (
 		<header className="bg-red-400 text-white shadow fixed w-full top-0 z-50">
 			<div className="wrapper">
@@ -20,11 +23,6 @@ const Header = () => {
 								</Link>
 							</li>
 							<li>
-								<Link className="nav-link" to="/about">
-									About
-								</Link>
-							</li>
-							<li>
 								<Link className="nav-link" to="/courses">
 									Course
 								</Link>
@@ -34,6 +32,35 @@ const Header = () => {
 									Blog
 								</Link>
 							</li>
+
+							{!currentUser ? (
+								<li>
+									<Link
+										className="bg-white text-red-400 rounded px-4 py-2 font-semibold hover:bg-red-300 hover:text-white transition-all duration-300 ease-linear"
+										to="/login"
+									>
+										Login
+									</Link>
+								</li>
+							) : (
+								<>
+									<li>
+										<span className="nav-link font-bold border-none">
+											{currentUser?.displayName}
+										</span>
+									</li>
+									<li>
+										{" "}
+										<button
+											onClick={logout}
+											type="button"
+											className="bg-white text-red-400 rounded px-4 py-2 font-semibold hover:bg-red-300 hover:text-white transition-all duration-300 ease-linear"
+										>
+											Logout
+										</button>
+									</li>
+								</>
+							)}
 						</ul>
 					</div>
 				</div>

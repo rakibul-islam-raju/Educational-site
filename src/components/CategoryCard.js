@@ -1,8 +1,11 @@
+import { Link } from "react-router-dom";
+
 const CategoryCard = ({ category }) => {
-	const { name, description, icon, varient } = category;
+	const { id, name, description, icon, varient } = category;
 	return (
 		<>
-			<div
+			<Link
+				to={`/${id}`}
 				className={`rounded p-6 bg-${varient}-100 group hover:bg-${varient}-500 transition duration-300 ease-in cursor-pointer`}
 			>
 				<div
@@ -16,7 +19,7 @@ const CategoryCard = ({ category }) => {
 				<p className="mt-4 text-gray-600 group-hover:text-white">
 					{description}
 				</p>
-			</div>
+			</Link>
 		</>
 	);
 };
